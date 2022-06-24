@@ -8,7 +8,7 @@ class CardList extends Component {
             <div>
                 {monsters.map(monster => {
                     return (
-                        <h1>{monster.name}</h1>
+                        <h1 key={monster.id}>{monster.name}</h1>
                     )
                 })}
             </div>
